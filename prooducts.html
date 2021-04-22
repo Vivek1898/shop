@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>SHOP</title>
+   <!-- icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="myhcss.css">
+    
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- j query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+
+li{ list-style: none;}
+
+.product{ 
+  width: 100%;
+  overflow: hidden;
+  display: flex; 
+  flex-wrap: wrap; /* 박스 줄내림 허용 */
+  background: #ccc;
+  padding: 9px 20px;
+}
+.product li{ 
+  background: #fff;
+  flex: 1;    
+  text-align: center;
+  box-shadow: 0 0 2px #999;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.product li:last-child{ margin-right: 0;}
+.product li:hover{
+  border: 2px solid grey;
+}
+.product h3, .product p{ padding: 0 10px 0 10px;}
+.product .bottom{ 
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+.product .bottom, .product .icons{ 
+  font-size: 13px;
+  padding: 10px;
+}
+.icons{
+    background:  #616161;;
+}
+.product .ico_event1, .product .ico_event2{
+  display:inline-block; vertical-align: middle;
+  width: 30px; height: 30px;
+  padding: 2px;
+  line-height: 1em; 
+  font-size: 11px;
+  background: #68f; color: #fff;
+}
+.product .ico_event2{ background: #f80;}
+
+.price1{ text-decoration: line-through;
+    color: red;
+    font-size: 17px
+}
+.price2{ font-size: 21px; 
+    color: darkcyan;
+}
+
+.header{
+    margin-top: 70px;
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    color: #616161;
+background: #bababa;
+text-shadow: #e0e0e0 1px 1px 0;
+color: #616161;
+background: #bababa
+line-height: 1em; 
+}
+.mybtn{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+
+}
+.mybtn:hover{
+    color: whitesmoke;
+}
+.product p:hover{
+    background-color: var(--accent-dark);
+    cursor: pointer;
+}
+h3{
+    font-family: Tahoma, Geneva, sans-serif;
+    /* font-size: 25px; */
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    /* color: #394A3B; */
+    color: #484A44;
+    /* font-weight: 700; */
+    text-decoration: none solid rgb(68, 68, 68);
+    /* font-style: normal; */
+    font-variant: normal;
+    text-transform: none;
+}
+    </style>
+
+</head>
+<body id="myhome"   style="    background-color: gray;"  >
+ <!-- navbar -->
+<nav id="navbar2" class="navbar">
+        <div class="menu-icon">
+  <span class="fas fa-bars"></span></div>
+  <div class="mylogo"  >
+   
+    v-SH<span>O</span>P</div>
+  <div class="nav-items">
+    <li><a href="#">&nbsp;&nbsp;  &nbsp;</a></li>
+  <li><a href="myhtml.html">Home</a></li>
+  <li><a href="myhtml.html#projects3">About</a></li>
+  <li><a href="myhtml.html#returnproducts">Brands</a></li>
+
+  <li><a href="pricing.html">Pricing</a></li>
+  
+  <li><a href="contactform.html">Contact</a></li>
+  </div>
+  <div class="search-icon">
+  <span class="fas fa-search"></span></div>
+  <div class="cancel-icon">
+  <span class="fas fa-times"></span></div>
+  <form action="#">
+          <input type="search" class="search-data" placeholder="Search" required>
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+  </nav>
+  
+  
+  <h1 class="header">PRODUCTS</h1>
+  
+    
+    <!-- Pricing Section -->
+    <section class="price2" id="pricing2">
+        
+     
+        <ul class="product">
+          <li>
+              <figure>
+                <img src="photo_2021-04-18_22-59-09.jpg" alt="">
+              </figure>
+              <h3>Mercurial Superfly CR7</h3>
+              
+              <div class="bottom">
+                      <span class="price1">7,379$</span> 
+                <span class="price2">6,200$</span>
+                <p class="icons">
+                <button class="mybtn">SHOP NOW</button>
+                </p> 
+              </div>
+            </li> 
+            <li>
+              <figure>
+                <img src="photo_2021-04-18_22-59-03.jpg" alt="">
+              </figure>
+              <h3>Juventus Jersy (XL-42)</h3>
+             
+              <div class="bottom">
+                      <span class="price1">1,379$</span> 
+                <span class="price2">1,290$</span>
+                <p class="icons">
+                <button class="mybtn">SHOP NOW</button>
+                </p> 
+              </div>
+            </li> 
+            <li>
+                <figure>
+                  <img src="photo_2021-04-18_22-59-09.jpg" alt="">
+                </figure>
+                <h3>Mercurial Superfly CR7</h3>
+                
+                <div class="bottom">
+                        <span class="price1">7,379$</span> 
+                  <span class="price2">6,200$</span>
+                  <p class="icons">
+                  <button class="mybtn">SHOP NOW</button>
+                  </p> 
+                </div>
+              </li> 
+              <li>
+                <figure>
+                  <img src="photo_2021-04-18_22-59-03.jpg" alt="">
+                </figure>
+                <h3>Juventus Jersy (XL-42)</h3>
+               
+                <div class="bottom">
+                        <span class="price1">1,379$</span> 
+                  <span class="price2">1,290$</span>
+                  <p class="icons">
+                  <button class="mybtn">SHOP NOW</button>
+                  </p> 
+                </div>
+              </li> 
+            
+        </ul>
+      
+  </section>
+
+  <section class="price2" id="pricing2">
+        
+     
+    <ul class="product">
+      <li>
+          <figure>
+            <img src="photo_2021-04-18_22-59-09.jpg" alt="">
+          </figure>
+          <h3>Mercurial Superfly CR7</h3>
+          
+          <div class="bottom">
+                  <span class="price1">7,379$</span> 
+            <span class="price2">6,200$</span>
+            <p class="icons">
+            <button class="mybtn">SHOP NOW</button>
+            </p> 
+          </div>
+        </li> 
+        <li>
+          <figure>
+            <img src="photo_2021-04-18_22-59-03.jpg" alt="">
+          </figure>
+          <h3>Juventus Jersy (XL-42)</h3>
+         
+          <div class="bottom">
+                  <span class="price1">1,379$</span> 
+            <span class="price2">1,290$</span>
+            <p class="icons">
+            <button class="mybtn">SHOP NOW</button>
+            </p> 
+          </div>
+        </li> 
+        <li>
+            <figure>
+              <img src="photo_2021-04-18_22-59-09.jpg" alt="">
+            </figure>
+            <h3>Mercurial Superfly CR7</h3>
+            
+            <div class="bottom">
+                    <span class="price1">7,379$</span> 
+              <span class="price2">6,200$</span>
+              <p class="icons">
+              <button class="mybtn">SHOP NOW</button>
+              </p> 
+            </div>
+          </li> 
+          <li>
+            <figure>
+              <img src="photo_2021-04-18_22-59-03.jpg" alt="">
+            </figure>
+            <h3>Juventus Jersy (XL-42)</h3>
+           
+            <div class="bottom">
+                    <span class="price1">1,379$</span> 
+              <span class="price2">1,290$</span>
+              <p class="icons">
+              <button class="mybtn">SHOP NOW</button>
+              </p> 
+            </div>
+          </li> 
+        
+    </ul>
+  
+</section>
+
+<section class="price2" id="pricing2">
+        
+     
+    <ul class="product">
+      <li>
+          <figure>
+            <img src="photo_2021-04-18_22-59-09.jpg" alt="">
+          </figure>
+          <h3>Mercurial Superfly CR7</h3>
+          
+          <div class="bottom">
+                  <span class="price1">7,379$</span> 
+            <span class="price2">6,200$</span>
+            <p class="icons">
+            <button class="mybtn">SHOP NOW</button>
+            </p> 
+          </div>
+        </li> 
+        <li>
+          <figure>
+            <img src="photo_2021-04-18_22-59-03.jpg" alt="">
+          </figure>
+          <h3>Juventus Jersy (XL-42)</h3>
+         
+          <div class="bottom">
+                  <span class="price1">1,379$</span> 
+            <span class="price2">1,290$</span>
+            <p class="icons">
+            <button class="mybtn">SHOP NOW</button>
+            </p> 
+          </div>
+        </li> 
+        <li>
+            <figure>
+              <img src="photo_2021-04-18_22-59-09.jpg" alt="">
+            </figure>
+            <h3>Mercurial Superfly CR7</h3>
+            
+            <div class="bottom">
+                    <span class="price1">7,379$</span> 
+              <span class="price2">6,200$</span>
+              <p class="icons">
+              <button class="mybtn">SHOP NOW</button>
+              </p> 
+            </div>
+          </li> 
+          <li>
+            <figure>
+              <img src="photo_2021-04-18_22-59-03.jpg" alt="">
+            </figure>
+            <h3>Juventus Jersy (XL-42)</h3>
+           
+            <div class="bottom">
+                    <span class="price1">1,379$</span> 
+              <span class="price2">1,290$</span>
+              <p class="icons">
+              <button class="mybtn">SHOP NOW</button>
+              </p> 
+            </div>
+          </li> 
+        
+    </ul>
+  
+</section>
+  
+   
+    <!-- Products slider-->
+    <footer id="returnfooter">
+      
+     
+      <div class="footer__top">
+        <div class="footer__address">
+          <h4 class="footer__address-heading">Address</h4>
+          <p>110026 VIC ABD</p>
+          <p>New Delhi,India</p>
+          <p>XXXXXXXXXXXXXXX</p>
+        </div>
+        
+        <div class="footer__social">
+          <h4 class="footer__address-heading">Social Media</h4>
+          <!-- <i class="social-icon fab fa-facebook-f"></i> -->
+    <!-- <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i> -->
+    <a href="https://www.facebook.com"class="iconsfoot social-icon fab fa-facebook"></a>
+    <a href="https://www.instagram.com"class="iconsfoot  social-icon fab fa-instagram"></a>
+    <a href="mailto:viveksingh27795@gmail.com"  class="iconsfoot  fas fa-envelope"></a>
+  <a href="https://www.twitter.com" class="iconsfoot  social-icon fab fa-twitter"></a>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__contact-heading">Contact</h4>
+          <p>Office Hours: 24/7</p>
+          <p>Tel: 990-098-8776</p>
+          <p>Email: viveksingh27795@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© Copyright 2021 &nbsp;  v-SH<span>O</span>P &nbsp;  Marketing Agency. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script>
+      // sticky NAV BAR
+window.onscroll = function() {stickyfunction()};
+
+var navbar = document.getElementById("navbar2");
+var sticky = navbar.offsetTop;
+
+function stickyfunction() {
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    
+   
+  } }
+      // nav bar transition 
+$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 150) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+//responsive navigation search
+const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+
+
+ 
+
+
+
+
+</script>
+      
+</body>
+ 
+</html>
